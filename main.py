@@ -33,9 +33,11 @@ if age >= 18:
             ans = input("Nadar ou contornar o lago? (nadar/contornar): ")
 
             if ans == "contornar":
+                print(" ")
                 print(
                     "Você escolheu contornar o lago e chegou ao outro lado em segurança."
                 )
+                print("Parabéns!!! Voce venceu....")
             elif ans == "nadar":
                 print(" ")
                 print(
@@ -50,16 +52,28 @@ if age >= 18:
                               
                 ans = input("Deseja tentar novamente? (sim/nao): ")
                 if ans == "sim":
+                   
                     print("Ao voltar você notou uma casa perto do rio.")
                     ans == input(
-                        "Deseja ir a casa ou tentar nadar de novo? (casa/ nadar): ")
+                        "Deseja ir a casa ou tentar nadar de novo? (casa/nadar): ")
+
                     if ans == "casa":
                         print("Você escolheu ir para a casa e passar a noite.")
                         print("Ao amanhecer o dono da casa foi seu guia e te levou pelo caminho certo.")
+                        print("Parabéns!!! Voce venceu....")
+                        '''
+                    else:
+                        print(" ")
+                        print("Voce escolheu tentar nadar novamente e se afogou.")
+                        vida -= 5
+                        print("# Voce agora esta com ", vida, " de vida #")
+                        print("Voce perdeu...")
+     '''
 
                 else:
-                    print("Você escolheu tentar nadar novamente e se afogou.")
-                    print("Você perdeu. Obrigada por jogar....")
+                    print(" ")
+                    print("Voce escolheu não tentar novamente")
+                    print("Voce perdeu...")
 
             else:
                 print("Você perdeu =/ ....")
