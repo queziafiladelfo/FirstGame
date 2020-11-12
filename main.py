@@ -10,6 +10,8 @@ print("Olá, ", name)
 if age >= 18:
     print ("Você tem idade suficiente para jogar!")
 
+    vida = 10
+
     wants_to_play = input("Deseja continuar?(sim/nao): ").lower()
     if wants_to_play == "sim":
         print(" ")
@@ -18,7 +20,27 @@ if age >= 18:
         print("          ##################")
         print(" ")
 
+        print("# ",name, " você está começando com ", vida, " de vida #")
+        print(" ")
+
         left_or_rigth = input("Faça sua escolha ....ESQUERDA ou DIREITA? ")
+        if left_or_rigth == "esquerda":
+            ans = input("Legal, você escolheu o caminho da esquerda e chegou a um lago. O que quer fazer agora? Nadar para o outro lado ou contornar o lago? (nadar/contornar): ")
+
+            if ans == "contornar":
+                print("Você escolheu contornar o lago e chegou ao outro lado em segurança.")
+            elif ans == "nadar":
+                print(" ")
+                print("Você escolheu nadar para chegar ao outro lado, mas ficou sem fôlego e voltou na metade do caminho.")
+
+                vida -= 5
+
+                print ("Você perdeu 5 de vida e está com ", vida, " de vida restantes. Deseja tentar novamente? ")
+            else:
+                print("Você perdeu =/ ....")        
+
+        else:
+           print("Você se perdeu....")     
     else:
         print(" ")
         print("          ##################")
