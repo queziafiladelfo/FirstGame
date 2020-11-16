@@ -52,23 +52,25 @@ if age >= 18:
                               
                 ans = input("Deseja tentar novamente? (sim/nao): ")
                 if ans == "sim":
-                   
+
+                    print(" ")                   
                     print("Ao voltar você notou uma casa perto do rio.")
-                    ans == input(
+                    ans = input(
                         "Deseja ir a casa ou tentar nadar de novo? (casa/nadar): ")
 
+                   
                     if ans == "casa":
+                        print(" ")
                         print("Você escolheu ir para a casa e passar a noite.")
                         print("Ao amanhecer o dono da casa foi seu guia e te levou pelo caminho certo.")
-                        print("Parabéns!!! Voce venceu....")
-                        '''
+                        print("Parabéns!!! Voce venceu....")                       
                     else:
                         print(" ")
                         print("Voce escolheu tentar nadar novamente e se afogou.")
                         vida -= 5
                         print("# Voce agora esta com ", vida, " de vida #")
                         print("Voce perdeu...")
-     '''
+     
 
                 else:
                     print(" ")
