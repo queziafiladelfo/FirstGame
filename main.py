@@ -23,14 +23,14 @@ if age >= 18:
         print("# ", name, " você está começando com ", vida, " de vida #")
         print(" ")
 
-        left_or_rigth = input("Faça sua escolha ....ESQUERDA ou DIREITA? ")
+        left_or_rigth = input("Faça sua escolha ....ESQUERDA ou DIREITA? ").lower()
         print(" ")
 
         if left_or_rigth == "esquerda":
             print(
                 "Legal, você escolheu o caminho da esquerda e chegou a um lago. O que quer fazer agora?"
             )
-            ans = input("Nadar ou contornar o lago? (nadar/contornar): ")
+            ans = input("Nadar ou contornar o lago? (nadar/contornar): ").lower()
 
             if ans == "contornar":
                 print(" ")
@@ -50,13 +50,13 @@ if age >= 18:
                 print("Você perdeu 5 de vida e está com ", vida,
                       " de vida restantes.")
                               
-                ans = input("Deseja tentar novamente? (sim/nao): ")
+                ans = input("Deseja tentar novamente? (sim/nao): ").lower()
                 if ans == "sim":
 
                     print(" ")                   
                     print("Ao voltar você notou uma casa perto do rio.")
                     ans = input(
-                        "Deseja ir a casa ou tentar nadar de novo? (casa/nadar): ")
+                        "Deseja ir a casa ou tentar nadar de novo? (casa/nadar): ").lower()
 
                    
                     if ans == "casa":
